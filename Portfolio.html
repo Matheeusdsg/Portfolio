@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio | Desenvolvedor Front-end</title>
+
+    <link rel="icon" type="image/png" href="https://static.readdy.ai/image/6ba99a7b306ca526ad255489ae3d866c/fb0d3697e6fa5d6fee4cf8483bde66ed.png">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#6C63FF',secondary:'#2B2D42'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="progress-bar" id="progressBar"></div>
+
+<!-- Header -->
+
+    <header class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
+
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+            <a href="#" class="h-12" style="cursor: default;">
+                <img src="https://i.postimg.cc/DwwN32QT/Logo-minimalista-de-circuito-eletr-nico.png" alt="Logo" class="h-full">
+            </a>
+
+    <nav class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link active font-medium">Home</a>
+        <a href="#sobre" class="nav-link font-medium">Sobre</a>
+        <a href="#habilidades" class="nav-link font-medium">Habilidades</a>
+        <a href="#projeto" class="nav-link font-medium">Projetos</a>
+        <a href="#contato" class="nav-link font-medium">Contato</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMRFzb_Qt0XwSOOfm0FS6HlgD_t05vRrFUPQYdcdtxdSdX5A/viewform" class="bg-primary text-white px-5 py-2 !rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Fale Comigo</a>
+    </nav>
+
+    <button class="md:hidden w-10 h-10 flex items-center justify-center text-primary" id="menuToggle">
+        <i class="ri-menu-line ri-lg"></i>
+    </button>
+
+        </div>
+
+    </header>
+
+<!-- Mobile Menu -->
+
+    <div class="mobile-menu fixed top-0 right-0 h-full w-3/4 bg-white shadow-lg z-50 p-6 flex flex-col" id="mobileMenu">
+
+        <div class="flex justify-between items-center mb-8">
+            <a href="#home" class="h-12">
+                <img src="https://i.postimg.cc/DwwN32QT/Logo-minimalista-de-circuito-eletr-nico.png" alt="Logo" class="h-full">
+            </a>
+            <button class="w-10 h-10 flex items-center justify-center text-primary" id="menuClose">
+                <i class="ri-close-line ri-lg"></i>
+            </button>
+        </div>
+
+    <nav class="flex flex-col space-y-6">
+        <a href="#home" class="text-lg font-medium hover:text-primary transition-colors">Home</a>
+        <a href="#sobre" class="text-lg font-medium hover:text-primary transition-colors">Sobre</a>
+        <a href="#habilidades" class="text-lg font-medium hover:text-primary transition-colors">Habilidades</a>
+        <a href="#projeto" class="text-lg font-medium hover:text-primary transition-colors">Projetos</a>
+        <a href="#contato" class="text-lg font-medium hover:text-primary transition-colors">Contato</a>
+        <a href="#contato" class="bg-primary text-white px-5 py-3 !rounded-button hover:bg-opacity-90 transition-all text-center mt-4 whitespace-nowrap">Fale Comigo</a>
+    </nav>
+
+        <div class="mt-auto flex space-x-4">
+            <a href="https://www.linkedin.com/in/matheus-gomes-820755350/" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center text-gray-600">
+                <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+
+            <a href="https://github.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center text-gray-600">
+                <i class="ri-github-fill ri-lg"></i>
+            </a>
+
+            <a href="#" class="social-icon w-10 h-10 flex items-center justify-center text-gray-600">
+                <i class="ri-mail-fill ri-lg"></i>
+            </a>
+        </div>
+
+    </div>
+
+<!-- Hero Section -->
+
+    <section id="home" class="min-h-screen flex items-center hero-bg relative" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20tech%20background%20with%20abstract%20geometric%20shapes%2C%20blue%20and%20purple%20gradient%2C%20minimalist%20design%2C%20digital%20technology%20concept%2C%20perfect%20for%20web%20developer%20portfolio%2C%20high%20quality%2C%204k%20resolution&width=1920&height=1080&seq=hero1&orientation=landscape');">
+        <div class="absolute inset-0 bg-secondary bg-opacity-70"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-7/12 fade-in">
+                    <div style="margin-left: 64px;">
+                        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Olá, eu sou <span class="text-primary">Matheus Gomes</span></h1>
+
+        <div class="typewriter mb-6">
+            <h2 class="text-xl md:text-3xl font-semibold text-white">Desenvolvedor Front-end</h2>
+        </div>
+
+        <p class="text-white text-lg mb-8 max-w-xl">Estudante de Técnico de Informática na FAETEC e apaixonado por criar experiências web incríveis e funcionais.</p>
+
+        <div class="flex flex-wrap gap-4">
+
+            <a href="#projeto" id="projetos" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-75 transition-all flex items-center whitespace-nowrap">
+                <span>Conheça meu trabalho</span>
+                    <i class="ri-arrow-right-line ri-lg ml-2"></i>
+            </a>
+
+            <a href="#sobre" class="bg-transparent border-2 border-white text-white px-6 py-3 !rounded-button hover:bg-white hover:text-secondary transition-all whitespace-nowrap">Iniciar</a>
+            
+        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute left-6 top-1/2 transform -translate-y-1/2 hidden md:flex flex-col space-y-6 z-30">
+
+            <a href="https://www.linkedin.com/in/matheus-gomes-820755350/" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+
+            <a href="https://github.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                <i class="ri-github-fill ri-lg"></i>
+            </a>
+
+            <a href="https://x.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                <i class="ri-twitter-fill ri-lg"></i>
+            </a>
+
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+
+            <a href="#sobre" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-20 backdrop-blur-sm text-white rounded-full">
+                <i class="ri-arrow-down-line ri-lg"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+<!-- Sobre Section -->
+
+    <section id="sobre" class="py-20 bg-white">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre Mim</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+
+            <div class="w-full md:w-5/12 fade-in">
+                <div class="relative rounded-lg overflow-hidden group">
+                    <img src="https://readdy.ai/api/search-image?query=young%20male%20programmer%20with%20glasses%20working%20on%20computer%2C%20professional%20portrait%2C%20modern%20office%20environment%2C%20soft%20lighting%2C%20high%20quality%2C%204k%20resolution%2C%20professional%20looking&width=600&height=800&seq=profile1&orientation=portrait" alt="Foto de perfil" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-primary bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-7/12 fade-in">
+
+                <h3 class="text-2xl font-semibold mb-4">Quem sou eu</h3>
+                    <p class="text-gray-700 mb-6">Olá! Sou um programador iniciante apaixonado por tecnologia e desenvolvimento web. Atualmente estou cursando Técnico de Informática na FAETEC de Santa Cruz e complementando minha formação com cursos de Front-End na Ûdemy. Mas pretendo continuar estudando sempre e fazendo novos projetos!</p>
+                    <p class="text-gray-700 mb-6">Meu objetivo é me tornar um desenvolvedor Front-End, criando aplicações web que não apenas funcionem perfeitamente, mas também proporcionem a melhor experiência possível aos usuários.</p>
+
+                <div class="mb-8">
+
+                    <h4 class="text-xl font-semibold mb-4">Minha Trajetória</h4>
+
+                    <div class="timeline-item fade-in">
+                        <div class="ml-2">
+                            <h5 class="font-semibold">Técnico de Informática</h5>
+                                <p class="text-gray-600">FAETEC Santa Cruz | 2025 - Atual</p>
+                                <p class="text-sm text-gray-700 mt-1">Cursando formação técnica com foco em desenvolvimento de software, linguagem de programação, design, robótica, desenvolvimento web, redes e manutenção.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="ml-2">
+                            <h5 class="font-semibold">Desenvolvimento Web Front-End</h5>
+                                <p class="text-gray-600">Udemy | 2025 - Atual</p>
+                                <p class="text-sm text-gray-700 mt-1">Estudando HTML, CSS, JavaScript e frameworks modernos para criação de interfaces responsivas e muito mais.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="ml-2">
+                            <h5 class="font-semibold">Primeiro Projeto Pessoal</h5>
+                                <p class="text-gray-600">Portfólio | 2025</p>
+                                <p class="text-sm text-gray-700 mt-1">Desenvolvimento do meu primeiro site de portfólio para apresentar minhas habilidades e projetos.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#habilidades" class="bg-primary text-white px-5 py-2 !rounded-button hover:bg-opacity-85 transition-all flex items-center whitespace-nowrap">
+                        <span>Minhas habilidades</span>
+                            <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                    <a href="#" class="bg-transparent border-2 border-primary text-primary px-5 py-2 !rounded-button hover:bg-primary hover:text-white transition-all whitespace-nowrap">Download do meu Currículo</a>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+</section>
+
+<!-- Habilidades Section -->
+
+    <section id="habilidades" class="py-20 bg-gray-50" style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%236c63ff\' fill-opacity=\'0.05\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Minhas Habilidades</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-gray-700 max-w-2xl mx-auto">Estas são as tecnologias e ferramentas com as quais estou trabalhando atualmente, além das que estou estudando para expandir meu conhecimento.</p>
+            </div>
+
+            <div class="mb-16">
+
+                <h3 class="text-2xl font-semibold mb-8 text-center fade-in">Em Desenvolvimento</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                            <i class="ri-html5-fill ri-2x text-primary"></i>
+                        </div>
+
+                        <h4 class="text-xl font-semibold text-center mb-4">HTML5</h4>
+                            <div class="progress-bar-skill progress-html mb-2"></div>
+                        <p class="text-sm text-gray-600 text-center">75%</p>
+                            <p class="text-gray-700 text-center mt-4">Estruturação semântica de páginas web, formulários e elementos multimídia.</p>
+                    </div>
+
+                    <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                            <i class="ri-css3-fill ri-2x text-primary"></i>
+                        </div>
+
+                        <h4 class="text-xl font-semibold text-center mb-4">CSS3</h4>
+                            <div class="progress-bar-skill progress-css mb-2"></div>
+                        <p class="text-sm text-gray-600 text-center">60%</p>
+                            <p class="text-gray-700 text-center mt-4">Estilização de páginas, layouts responsivos, animações e transições.</p>
+                    </div>
+
+                    <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                            <i class="ri-javascript-fill ri-2x text-primary"></i>
+                        </div>
+
+                        <h4 class="text-xl font-semibold text-center mb-4">JavaScript</h4>
+                            <div class="progress-bar-skill progress-js mb-2"></div>
+                        <p class="text-sm text-gray-600 text-center">30%</p>
+                            <p class="text-gray-700 text-center mt-4">Manipulação do DOM, eventos, funções assíncronas e APIs.</p>
+                        </div>
+
+                    <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                        <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                            <i class="ri-github-fill ri-2x text-primary"></i>
+                        </div>
+
+                        <h4 class="text-xl font-semibold text-center mb-4">Git/GitHub</h4>
+                            <div class="progress-bar-skill progress-react mb-2"></div>
+                        <p class="text-sm text-gray-600 text-center">90%</p>
+                            <p class="text-gray-700 text-center mt-4">Controle de versão, branches, commits e colaboração em projetos.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mb-16">
+
+                <h3 class="text-2xl font-semibold mb-8 text-center fade-in">Estudando</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                            <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                                <i class="ri-javascript-fill ri-2x text-primary"></i>
+                            </div>
+
+                    <h4 class="text-xl font-semibold text-center mb-2">JavaScript</h4>
+                        <p class="text-gray-700 text-center">Mesmo sabendo o básico, tenho muito a evoluir, e por isso estou buscando aprender mais sobre a linguagem.</p>
+                    </div>
+
+                        <div class="skill-card bg-white p-6 rounded-lg shadow-md fade-in">
+                            <div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 mx-auto">
+                                <i class="ri-database-2-line ri-2x text-primary"></i>
+                            </div>
+
+                    <h4 class="text-xl font-semibold text-center mb-2">SQL</h4>
+                        <p class="text-gray-700 text-center">Eu estou estudando consultas e manipulação de bancos de dados relacionais.</p>
+                    </div>
+
+                    </div>
+
+        </div>
+
+            <div>
+
+                <h3 class="text-2xl font-semibold mb-8 text-center fade-in">Próximos Passos</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                    <div class="skill-card bg-white p-5 rounded-lg shadow-md fade-in">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full mb-4 mx-auto">
+                            <i class="ri-nodejs-line ri-xl text-gray-500"></i>
+                        </div>
+
+                    <h4 class="text-lg font-semibold text-center">Node.js</h4>
+                    </div>
+
+                    <div class="skill-card bg-white p-5 rounded-lg shadow-md fade-in">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full mb-4 mx-auto">
+                            <i class="ri-vuejs-line ri-xl text-gray-500"></i>
+                        </div>
+
+                    <h4 class="text-lg font-semibold text-center">Vue.js</h4>
+                    </div>
+
+                    <div class="skill-card bg-white p-5 rounded-lg shadow-md fade-in">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full mb-4 mx-auto">
+                            <i class="fa-brands fa-python fa-2x" style="opacity: 65%;"></i>
+                        </div>
+
+                    <h4 class="text-lg font-semibold text-center">Python</h4>
+                    </div>
+
+                    <div class="skill-card bg-white p-5 rounded-lg shadow-md fade-in">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full mb-4 mx-auto">
+                            <i class="fa-brands fa-react fa-2x" style="opacity: 65%;"></i>
+                        </div>
+
+                    <h4 class="text-lg font-semibold text-center">React</h4>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Projetos Section (nao mexi ainda direito) --> 
+
+    <section id="projeto" class="py-20 bg-white">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meus Projetos</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                    <p class="text-gray-700 max-w-2xl mx-auto">Aqui estão meus projetos que desenvolvi. Cada projeto representa um passo importante no meu crescimento e como melhorei sendo desenvolvedor.</p>
+            </div>
+
+            <div class="mb-8 flex justify-center fade-in">
+                <div class="inline-flex bg-gray-100 p-1 rounded-full">
+                    <button class="px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap">Todos</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 transition-colors whitespace-nowrap">HTML/CSS</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 transition-colors whitespace-nowrap">JavaScript</button>
+                    <button class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 transition-colors whitespace-nowrap">Outros</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="project-card rounded-lg overflow-hidden shadow-md fade-in">
+
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://i.postimg.cc/t47xDKpj/imagem-2025-05-13-182830582.png" alt="Projeto 1" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center">
+                            <div class="text-center p-4">
+                                <a href="#" class="inline-block bg-white text-primary px-4 py-2 !rounded-button hover:bg-gray-100 transition-colors mb-3 whitespace-nowrap">Ver Demo</a>
+                                <a href="https://github.com/Matheeusdsg/Projeto-EPA-FAETEC-2024" target="_blank" class="inline-block bg-transparent border-2 border-white text-white px-4 py-2 !rounded-button hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                                    <i class="ri-github-fill mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Co-fundador de IA Landing Page</h3>
+                            <p class="text-gray-700 mb-4">Página de destino responsiva apresentando um co-fundador do chatgpt, com design moderno e interface limpa.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">HTML</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">CSS</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">JavaScript</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-card rounded-lg overflow-hidden shadow-md bg-gray-50 border-2 border-dashed border-gray-300 fade-in">
+                    <div class="h-56 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <div class="w-16 h-16 flex items-center justify-center bg-gray-200 rounded-full mb-2 mx-auto">
+                                <i class="ri-add-line ri-2x text-gray-500"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Próximo Projeto</h3>
+                                <p class="text-gray-600">Em breve novos projetos serão adicionados aqui.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12 fade-in">
+                <a href="https://github.com/Matheeusdsg" target="_blank" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all inline-flex items-center whitespace-nowrap">
+                    <i class="ri-github-fill mr-2"></i>
+                <span>Ver todos no GitHub</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Contato Section -->
+
+    <section id="contato" class="py-20 bg-gray-50">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                    <p class="text-gray-700 max-w-2xl mx-auto">Estou disponível para estágios, projetos freelance ou apenas para trocar ideias sobre desenvolvimento web. Vamos conversar!</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12">
+
+                <div class="w-full md:w-5/12 fade-in">
+
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+
+                        <h3 class="text-2xl font-semibold mb-6">Informações de Contato</h3>
+
+                            <div class="flex items-start mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 shrink-0">
+                                    <i class="ri-map-pin-line ri-lg text-primary"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold mb-1">Localização</h4>
+                                        <p class="text-gray-700">Rio de Janeiro, RJ - Brasil</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 shrink-0">
+                                    <i class="ri-mail-line ri-lg text-primary"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                        <p class="text-gray-700">matheeusdsginfo@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start mb-8">
+                                <div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 shrink-0">
+                                    <i class="ri-phone-fill ri-lg" style="color: #6C63FF;"></i>
+                                </div>
+
+                                <div>
+                                    <h4 class="font-semibold mb-1">Telefone</h4>
+                                        <p class="text-gray-700">+55 (21) 99031-9698</p>
+                                </div>
+                            </div>
+
+                        <h4 class="font-semibold mb-4">Minhas redes sociais</h4>
+
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/matheus-gomes-820755350/" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-600 rounded-full hover:bg-primary hover:text-white transition-all">
+                                    <i class="ri-linkedin-fill ri-lg"></i>
+                                </a>
+
+                                <a href="https://github.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-600 rounded-full hover:bg-primary hover:text-white transition-all">
+                                    <i class="ri-github-fill ri-lg"></i>
+                                </a>
+
+                                <a href="https://x.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-600 rounded-full hover:bg-primary hover:text-white transition-all">
+                                    <i class="ri-twitter-fill ri-lg"></i>
+                                </a>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Formulário -->
+
+                <div class="w-full md:w-7/12 fade-in">
+
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+
+                        <h3 class="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
+
+                        <form action="https://formspree.io/f/xqaqloke" method="POST">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">Nome</label>
+                                        <input type="text" id="name" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Seu nome">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                        <input type="email" id="email" class="form-input w-full px-4 py-3 rounded-lg" placeholder="seu.email@exemplo.com">
+                                </div>
+
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">Assunto</label>
+                                    <input type="text" id="subject" class="form-input w-full px-4 py-3 rounded-lg" placeholder="Assunto da mensagem">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                    <textarea id="message" rows="5" class="form-input w-full px-4 py-3 rounded-lg resize-none" placeholder="Sua mensagem aqui..."></textarea>
+                            </div>
+
+                            <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-opacity-90 transition-all flex items-center whitespace-nowrap">
+                                <span>Enviar Mensagem</span>
+                                <i class="ri-send-plane-fill ml-2"></i>
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Footer -->
+
+    <footer class="bg-secondary text-white py-12">
+
+        <div class="container mx-auto px-4">
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="h-12 mb-2 inline-block">
+                        <img src="https://i.postimg.cc/DwwN32QT/Logo-minimalista-de-circuito-eletr-nico.png" alt="Logo" class="h-full">
+                    </a>
+                    <p class="text-gray-300 max-w-md">Desenvolvedor Front-end apaixonado por criar experiências web incríveis e funcionais.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end">
+
+                    <div class="flex space-x-4 mb-4">
+
+                        <a href="https://www.linkedin.com/in/matheus-gomes-820755350/" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-linkedin-fill ri-lg"></i>
+                        </a>
+
+                        <a href="https://github.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-github-fill ri-lg"></i>
+                        </a>
+
+                        <a href="#" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-instagram-fill ri-lg"></i>
+                        </a>
+
+                        <a href="https://x.com/Matheeusdsg" target="_blank" class="social-icon w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 text-white rounded-full hover:bg-primary hover:text-white transition-all">
+                            <i class="ri-twitter-fill ri-lg"></i>
+                        </a>
+
+                    </div>
+
+                    <p class="text-gray-300">&copy; 2025 Matheus Gomes. Todos os direitos reservados.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg opacity-0 invisible transition-all z-50">
+<i class="ri-arrow-up-line ri-lg"></i>
+</button>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Progress Bar
+window.addEventListener('scroll', function() {
+const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+const scrolled = (winScroll / height) * 100;
+document.getElementById('progressBar').style.width = scrolled + '%';
+});
+// Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTopButton.classList.remove('opacity-0', 'invisible');
+backToTopButton.classList.add('opacity-100', 'visible');
+} else {
+backToTopButton.classList.remove('opacity-100', 'visible');
+backToTopButton.classList.add('opacity-0', 'invisible');
+}
+});
+backToTopButton.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const menuClose = document.getElementById('menuClose');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.add('active');
+});
+menuClose.addEventListener('click', function() {
+mobileMenu.classList.remove('active');
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.remove('active');
+});
+});
+// Active Navigation Link
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+window.addEventListener('scroll', function() {
+let current = '';
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.clientHeight;
+if (pageYOffset >= sectionTop - 200) {
+current = section.getAttribute('id');
+}
+});
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === '#' + current) {
+link.classList.add('active');
+}
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Fade In Animation on Scroll
+const fadeElements = document.querySelectorAll('.fade-in');
+const fadeInOnScroll = function() {
+fadeElements.forEach(element => {
+const elementTop = element.getBoundingClientRect().top;
+const elementVisible = 150;
+if (elementTop < window.innerHeight - elementVisible) {
+element.classList.add('visible');
+}
+});
+};
+window.addEventListener('scroll', fadeInOnScroll);
+fadeInOnScroll(); // Call once on load
+});
+</script>
+</body>
+</html>
